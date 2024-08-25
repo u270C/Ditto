@@ -1,0 +1,4 @@
+%Common network Callback
+<void onSuccess(
+<void onResponse(
+<void onReceive(

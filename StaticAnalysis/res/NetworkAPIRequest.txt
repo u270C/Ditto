@@ -1,0 +1,78 @@
+%Network API
+%java net：java.net.HttpURLConnection; java.net.URLConnection; javax.net.ssl.HttpsURLConnection
+<java.net.URL: java.net.URLConnection openConnection()>
+<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>
+<java.net.URL: java.net.URLConnection openStream()>
+<java.net.HttpURLConnection: void connect()>
+
+<java.net.http.HttpClient: java.net.http.HttpResponse send(java.net.http.HttpRequest)>
+
+% Socket API
+<java.net.Socket: void connect(java.net.SocketAddress)>
+
+% Apache HttpClient 5.x;4.x;3.x
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.core5.http.HttpHost,org.apache.hc.core5.http.nio.AsyncRequestProducer,org.apache.hc.core5.http.nio.AsyncResponseConsumer,org.apache.hc.core5.http.nio.HandlerFactory<org.apache.hc.core5.http.nio.AsyncPushConsumer>,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.concurrent.FutureCallback)>
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.core5.http.nio.AsyncRequestProducer,org.apache.hc.core5.http.nio.AsyncResponseConsumer,org.apache.hc.core5.http.nio.HandlerFactory<org.apache.hc.core5.http.nio.AsyncPushConsumer>,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.concurrent.FutureCallback)>
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.core5.http.nio.AsyncRequestProducer,org.apache.hc.core5.http.nio.AsyncResponseConsumer,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.concurrent.FutureCallback)>
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.core5.http.nio.AsyncRequestProducer,org.apache.hc.core5.http.nio.AsyncResponseConsumer,org.apache.hc.core5.concurrent.FutureCallback)>
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.client5.http.async.methods.SimpleHttpRequest,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.concurrent.FutureCallback<org.apache.hc.client5.http.async.methods.SimpleHttpResponse>)>
+<org.apache.hc.client5.http.impl.async.CloseableHttpAsyncClient: java.util.concurrent.Future execute(org.apache.hc.client5.http.async.methods.SimpleHttpRequest,org.apache.hc.core5.concurrent.FutureCallback<org.apache.hc.client5.http.async.methods.SimpleHttpResponse>)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: org.apache.hc.client5.http.impl.classic.CloseableHttpResponse execute(org.apache.hc.core5.http.HttpHost,org.apache.hc.core5.http.ClassicHttpRequest,org.apache.hc.core5.http.protocol.HttpContext)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: org.apache.hc.client5.http.impl.classic.CloseableHttpResponse execute(org.apache.hc.core5.http.ClassicHttpRequest,org.apache.hc.core5.http.protocol.HttpContext)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: org.apache.hc.client5.http.impl.classic.CloseableHttpResponse execute(org.apache.hc.core5.http.ClassicHttpRequest)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: org.apache.hc.client5.http.impl.classic.CloseableHttpResponse execute(org.apache.hc.core5.http.HttpHost,org.apache.hc.core5.http.ClassicHttpRequest)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: java.lang.Object execute(org.apache.hc.core5.http.ClassicHttpRequest,org.apache.hc.core5.http.io.HttpClientResponseHandler)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: java.lang.Object execute(org.apache.hc.core5.http.ClassicHttpRequest,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.http.io.HttpClientResponseHandler)>
+<org.apache.hc.client5.http.impl.classic.CloseableHttpClient: java.lang.Object execute(org.apache.hc.core5.http.HttpHost,org.apache.hc.core5.http.ClassicHttpRequest,org.apache.hc.core5.http.protocol.HttpContext,org.apache.hc.core5.http.io.HttpClientResponseHandler)>
+<org.apache.http.client.HttpClient: java.lang.Object execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler)>
+<org.apache.http.client.HttpClient: java.lang.Object execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)>
+<org.apache.http.client.HttpClient: java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)>
+<org.apache.http.client.HttpClient: java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)>
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)>
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: java.lang.Object execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler)>
+<org.apache.http.impl.client.CloseableHttpClient: java.lang.Object execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)>
+<org.apache.http.impl.client.CloseableHttpClient: java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>
+<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)>
+
+%Volley
+<com.android.volley.toolbox.StringRequest: void <init>(int,java.lang.String,com.android.volley.Response.Listener<java.lang.String>,com.android.volley.Response.ErrorListener)>
+<com.android.volley.toolbox.StringRequest: void <init>(java.lang.String,com.android.volley.Response.Listener<java.lang.String>,com.android.volley.Response.ErrorListener)>
+<com.android.volley.toolbox.JsonObjectRequest: void <init>(int,java.lang.String,org.json.JSONObject,com.android.volley.Response.Listener<org.json.JSONObject>,com.android.volley.Response.ErrorListener)>
+<com.android.volley.toolbox.JsonObjectRequest: void <init>(java.lang.String,org.json.JSONObject,com.android.volley.Response.Listener<org.json.JSONObject>,com.android.volley.Response.ErrorListener)>
+<com.android.volley.toolbox.JsonArrayRequest: void <init>(int,java.lang.String,org.json.JSONArray,com.android.volley.Response.Listener<org.json.JSONArray>,com.android.volley.Response.ErrorListener)>
+<com.android.volley.toolbox.JsonArrayRequest: void <init>(java.lang.String,com.android.volley.Response.Listener<org.json.JSONArray>,com.android.volley.Response.ErrorListener)>
+
+%okhttp3
+<okhttp3.internal.connection.RealCall: okhttp3.Response execute()>
+<okhttp3.Call: okhttp3.Response execute()>
+<okhttp3.RealCall: okhttp3.g0 execute()>
+<com.squareup.okhttp.Call: com.squareup.okhttp.Response execute()>
+
+<okhttp3.internal.connection.RealCall: void enqueue(okhttp3.Callback)>
+<okhttp3.Call: void enqueue(okhttp3.Callback)>
+<com.squareup.okhttp.Call: void enqueue(com.squareup.okhttp.Callback)>
+
+
+%Firebase
+<com.google.firebase.perf.network.FirebasePerfOkHttpClient: okhttp3.Response execute(okhttp3.Call)>
+
+%Retrofit2,simply look into apiservice(defined interface)
+%<retrofit2.Retrofit: T create(java.lang.Class)>
+%<retrofit2.Call: void enqueue(retrofit2.Callback)>
+
+% Customized network request
+<com.huawei.hms.network.httpclient.HttpClient: com.huawei.hms.network.httpclient.Request$Builder newRequest()>
+<com.alibaba.aliexpress.gundam.ocean.netscene.GdmOceanNetScene: java.lang.Object request()>
+<com.aliexpress.common.apibase.netscene.AENetScene: java.lang.Object request()>
+<com.alibaba.aliexpress.gundam.ocean.netscene.GdmOceanNetScene: void asyncRequest(com.aliexpress.service.task.task.BusinessCallback)>

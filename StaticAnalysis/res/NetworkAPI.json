@@ -1,0 +1,29 @@
+{
+  "java.net.HttpURLConnection": {
+    "feature": ["<java.net.URL: java.net.URLConnection openConnection()>","<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>","<java.net.URL: java.net.URLConnection openStream()>","<java.net.HttpURLConnection: void connect()>"],
+    "request":["<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>"],
+    "response": ["<java.net.HttpURLConnection: java.io.InputStream getInputStream()>", "<java.net.URLConnection: java.io.InputStream getInputStream()>"]
+  },
+  "okhttp3": {
+    "feature": ["<okhttp3.internal.connection.RealCall: okhttp3.Response execute()>",
+      "<okhttp3.Call: okhttp3.Response execute()>",
+      "<okhttp3.RealCall: okhttp3.g0 execute()>",
+      "<com.squareup.okhttp.Call: com.squareup.okhttp.Response execute()>",
+      "<okhttp3.internal.connection.RealCall: void enqueue(okhttp3.Callback)>",
+      "<okhttp3.Call: void enqueue(okhttp3.Callback)>",
+      "<com.squareup.okhttp.Call: void enqueue(com.squareup.okhttp.Callback)>"],
+    "request": [],
+    "response": []
+  },
+  "Retrofit2": {
+    "feature": [],
+    "request": [],
+    "response": []
+  },
+  "GdmOceanNetScene": {
+    "feature": ["<com.alibaba.aliexpress.gundam.ocean.netscene.GdmOceanNetScene: void asyncRequest(com.aliexpress.service.task.task.BusinessCallback)>"],
+    "request": ["<com.alibaba.aliexpress.gundam.ocean.netscene.GdmOceanNetScene: void asyncRequest(com.aliexpress.service.task.task.BusinessCallback)>","<com.aliexpress.common.apibase.netscene.AENetScene: java.lang.Object request()>"],
+    "response": ["com.aliexpress.service.task.task.BusinessCallback"],
+    "resSource": ["<com.aliexpress.service.task.task.BusinessResult: java.lang.Object getData()>"]
+  }
+}

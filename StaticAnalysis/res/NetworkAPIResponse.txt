@@ -1,0 +1,28 @@
+%Network API
+%java net
+<java.net.HttpURLConnection: java.io.InputStream getInputStream()>
+<java.net.URLConnection: java.io.InputStream getInputStream()>
+
+
+%okhttp3
+<okhttp3.internal.connection.RealCall: okhttp3.Response execute()>
+<okhttp3.Call: okhttp3.Response execute()>
+<com.squareup.okhttp.Call: com.squareup.okhttp.Response execute()>
+
+<okhttp3.internal.connection.RealCall: void enqueue(okhttp3.Callback)>
+<okhttp3.Call: void enqueue(okhttp3.Callback)>
+<com.squareup.okhttp.Call: void enqueue(com.squareup.okhttp.Callback)>
+
+%Firebase
+<com.google.firebase.perf.network.FirebasePerfOkHttpClient: void enqueue(okhttp3.Call,okhttp3.Callback)>
+<com.google.firebase.perf.network.FirebasePerfOkHttpClient: okhttp3.Response execute(okhttp3.Call)>
+
+%Retrofit2,simply look into apiservice(defined interface)
+<retrofit2.Call: void enqueue(retrofit2.Callback)>
+
+%Volley
+<com.android.volley.Response parseNetworkResponse(com.android.volley.NetworkResponse)>
+<com.android.volley.Request: com.android.volley.Response<T> parseNetworkResponse(com.android.volley.NetworkResponse)>
+<com.android.volley.toolbox.JsonArrayRequest: com.android.volley.Response<org.json.JSONArray> parseNetworkResponse(com.android.volley.NetworkResponse)>
+<com.android.volley.toolbox.StringRequest: com.android.volley.Response<java.lang.String> parseNetworkResponse(com.android.volley.NetworkResponse)>
+<com.android.volley.toolbox.JsonRequest: com.android.volley.Response<T> parseNetworkResponse(com.android.volley.NetworkResponse)>
